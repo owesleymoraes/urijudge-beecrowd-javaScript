@@ -3,17 +3,16 @@ const { stdout } = require('process');
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\n');
 let amountSum = 0;
-let numberOne;
-let numberTwo;
-let numberText;
+
 let arrayIndex = [];
 let count = 0;
+let numberText;
 
 
-do {
-    numberText = lines.shift().split(" ");
-    numberOne = parseInt(numberText[0]);
-    numberTwo = parseInt(numberText[1]);
+while (numberText = lines.shift().split(" ")) {
+
+    let numberOne = parseInt(numberText[0]);
+    let numberTwo = parseInt(numberText[1]);
 
 
     if (numberOne <= 0 || numberTwo <= 0) {
@@ -49,4 +48,4 @@ do {
     amountSum = 0;
     arrayIndex = [];
 
-} while (numberOne > 0 && numberTwo > 0);
+} 
