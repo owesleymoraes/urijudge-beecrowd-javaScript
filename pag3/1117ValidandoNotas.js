@@ -4,8 +4,6 @@ var lines = input.split('\n');
 let listNotes  = [];
 let amountNotes = 1;
 
-listNotes.push();
-
 while( amountNotes <=2 ) {
     
     var note = parseFloat(lines.shift().split('\n'));
