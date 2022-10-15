@@ -10,8 +10,6 @@ var continueProgram = 1;
 function calculator(noteOne, noteTwo) {
 
     var avarge = (((noteOne + noteTwo) / 2)).toFixed(2);
-    listNotes = [];
-    amountNotes = 0;
     console.log(`media = ${avarge}`);
 }
 
